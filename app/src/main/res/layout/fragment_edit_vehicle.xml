@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".ui.fragments.EditVehicleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_vehicles"
+                android:tint="?attr/iconColor"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content"
+                app:placeholderText="Ex: Volkswagen"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                android:id="@+id/brand"
+                android:hint="@string/brand"
+                app:errorEnabled="true"
+                app:boxBackgroundColor="?attr/backgroundColor"
+                app:hintTextColor="?attr/formColor"
+                app:counterTextColor="?attr/placeholderTextColor"
+                app:boxStrokeColor="?attr/formColor"
+                app:placeholderTextColor="?attr/placeholderTextColor"
+                app:helperTextTextColor="?attr/placeholderTextColor"
+                android:textColorHint="?attr/placeholderTextColor"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/brandInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:inputType="text"
+                    android:textColor="?attr/textColor"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/model"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content"
+                app:placeholderText="Ex: Scirocco"
+                android:paddingTop="25dp"
+                android:hint="@string/model"
+                app:boxBackgroundColor="?attr/backgroundColor"
+                app:hintTextColor="?attr/formColor"
+                app:counterTextColor="?attr/placeholderTextColor"
+                app:boxStrokeColor="?attr/formColor"
+                app:placeholderTextColor="?attr/placeholderTextColor"
+                app:helperTextTextColor="?attr/placeholderTextColor"
+                android:textColorHint="?attr/placeholderTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:id="@+id/modelInput"
+                    android:textColor="?attr/textColor"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/license"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:placeholderText="Ex: 11-AA-11"
+                android:paddingTop="25dp"
+                android:hint="@string/license"
+                app:boxBackgroundColor="?attr/backgroundColor"
+                app:hintTextColor="?attr/formColor"
+                app:counterTextColor="?attr/placeholderTextColor"
+                app:boxStrokeColor="?attr/formColor"
+                app:placeholderTextColor="?attr/placeholderTextColor"
+                app:helperTextTextColor="?attr/placeholderTextColor"
+                android:textColorHint="?attr/placeholderTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:inputType="text"
+                    android:id="@+id/licenseInput"
+                    android:textColor="?attr/textColor"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content"
+                app:helperTextEnabled="true"
+                app:helperText="@string/helper_text_date"
+                app:counterEnabled="true"
+                app:counterMaxLength="5"
+                app:placeholderText="MM/yy"
+                android:paddingTop="25dp"
+                android:hint="@string/date"
+                app:boxBackgroundColor="?attr/backgroundColor"
+                app:hintTextColor="?attr/formColor"
+                app:counterTextColor="?attr/placeholderTextColor"
+                app:boxStrokeColor="?attr/formColor"
+                app:placeholderTextColor="?attr/placeholderTextColor"
+                app:helperTextTextColor="?attr/placeholderTextColor"
+                android:textColorHint="?attr/placeholderTextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:textColor="?attr/textColor"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/editVehicleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="?attr/fabColor"
+                android:text="@string/edit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

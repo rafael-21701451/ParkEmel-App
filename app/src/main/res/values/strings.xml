@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">ParkEmel</string>
+    <!--Drawer-->
+    <string name="parks">Parks</string>
+    <string name="map">Map</string>
+    <string name="quick_find">Quick Find</string>
+    <string name="vehicles">My Vehicles</string>
+    <string name="contacts">Contacts</string>
+    <string name="settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--My Vehicles-->
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="edit_vehicle">Edit Vehicle</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="license">License Plate</string>
+    <string name="date">License Date</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="messageP1">Reboque</string>
+    <string name="messageP2">Reboque {insert license plate here}</string>
+
+    <!--VehicleError-->
+    <string name="brandError">Brand Required</string>
+    <string name="modelError">Model Required</string>
+    <string name="licenseError">License Plate Required</string>
+    <string name="licenseError2">Invalid License</string>
+    <string name="dateError">Date Required</string>
+    <string name="duplicateLicense">License Plate Already Exists</string>
+    <string name="helper_text_date">Month/Year(MM/YY)</string>
+    <string name="invalid_date">Invalid Date</string>
+
+    <!--Parks-->
+    <string name="viewPark">Park Details</string>
+    <string name="goToPark">Go To Park</string>
+    <string name="name">Name:</string>
+    <string name="distance">Distance:</string>
+    <string name="occupation">Occupation:</string>
+    <string name="occupiedPlaces">Spots Taken:</string>
+    <string name="type">Type:</string>
+    <string name="capacity">Capacity:</string>
+    <string name="surface">Surface</string>
+    <string name="structure">Structure</string>
+    <string name="lastUpdate">Last Update:</string>
+    <string name="code">Code:</string>
+    <string name="coordinates">Coordinates:</string>
+    <string name="seeDetails">Click For More Details</string>
+
+    <!--Quick Find-->
+    <string name="descr_qf">Shake your phone to find parks near you!</string>
+
+    <!--Filters-->
+    <string name="filters">Filters</string>
+    <string name="apply">Apply</string>
+    <string name="clear">Clear</string>
+    <string name="free">0-90%</string>
+    <string name="partiallyFull">91-99%</string>
+    <string name="full">100%</string>
+    <string name="any">Any</string>
+    <string name="less">Less than</string>
+
+    <!--Settings-->
+    <string name="setting_1">Shake To Reset Filters</string>
+    <string name="setting_2">Allow Dark Mode</string>
+
+    <!--Contacts-->
+    <string name="service_station">Service Stations</string>
+    <string name="general_contacts">General Contacts</string>
+    <string name="blocked_vehicles">Blocked Vehicles</string>
+    <string name="ss_details"><![CDATA[<b>Loja do Cidadão do Saldanha</b>
+                    <br/>Mercado 31 de Janeiro, Rua Engenheiro Vieira da Silva
+                    <br/><br/><b>Working Hours:</b> Monday to Friday - 9:00 to 19:00
+                    <br/><br/><b>Loja do Cidadão das Laranjeiras</b>
+                    <br/>Rua Abranches Ferrão, 10
+                    <br/><br/><b>Working Hours:</b> Monday to Friday - 8:30 to 19:30
+                    <br/>Saturdays - 09:30 to 15:00
+                    <br/><br/><b>Edifício central do Município de Lisboa</b>
+                    <br/>Campo Grande, 25
+                    <br/><br/><b>Working Hours:</b> Monday to Friday - 9:00 to 19:00<br/>]]></string>
+    <string name="gc_details"><![CDATA[<b>Telephone:</b> 211163060
+                    <br/><b>Fax:</b> 217813699
+                    <br/><br/><b>Working Hours:</b> Monday to Friday - 8:00 to 20:00
+                    <br/>Saturdays - 09:00 to 15:00
+                    <br/><br/>To contact us, use the client area on our website.<br/>]]></string>
+    <string name="bv_details"><![CDATA[<b>Telephone:</b> 217803131
+                    <br/><br/><b>Working Hours:</b> Monday to Friday - 8:00 to 24:00
+                    <br/>Saturdays, Sundays and Holidays - 09:00 to 18:00<br/>]]></string>
+    <string name="check_blocked_vehicles">Check If Vehicle Is Blocked</string>
+
+    <!-- Trip Planner -->
+    <string name="trip_planner">Trip Planner</string>
+    <string name="address">Address</string>
+    <string name="descr_tp">See the best option to go to your destination, using EMEL parks and GIRA bicycles (if applicable).</string>
+    <string name="search">Search</string>
+    <string name="trip_planner_result">Recommended Route</string>
+    <string name="confirm">Confirm</string>
+    <string name="errorAddress">Address Required</string>
+    <string name="invalidAddress">Invalid Address</string>
+    <string name="noResults">No results found. Parks may be full or your destination may be too far away.</string>
+    <string name="freeBikes">Free Bikes:</string>
+    <string name="freeSpots">Free Spots:</string>
+    <string name="freeDocks">Free Docks:</string>
+    <string name="distance1">Distance to 2:</string>
+    <string name="distance2">Distance to 3:</string>
+    <string name="distance3">Distance to end:</string>
+
+    <!-- Toast -->
+    <string name="noPark">No free parks available.</string>
+    <string name="connectionResumed">Connection resumed.</string>
+    <string name="connectionLost">Connection lost. Data may not be accurate.</string>
+    <string name="noPermissions">Insufficient permissions.</string>
+    <string name="noParksNearYou">There are no parks near you.</string>
+
+    <!-- Dialog Alert -->
+    <string name="noConnection">No Connection</string>
+    <string name="noConnectionDescription">Could not obtain the most recent data. Current data may not be accurate.</string>
+    <string name="confirmAccept">Understood</string>
+
+    <string name="lowBattery">Low Battery</string>
+    <string name="messageLowBattery">Do you want to activate dark mode to extend battery life?</string>
+    <string name="activate">Activate</string>
+    <string name="ignore">Ignore</string>
+
+    <string name="clearFilters">Clear Filters</string>
+    <string name="clearFiltersMessage">Are you sure you want to clear all filters?</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="noDistance">N/A</string>
+    <string name="locationOff">Turn on location services to see your current location.</string>
+    <string name="noDistanceToast">Turn on location services to see your distance relative to the parks.</string>
+    <string name="parkMeNowNoDistance">Turn on location services to use Park Me Now</string>
+
+</resources>

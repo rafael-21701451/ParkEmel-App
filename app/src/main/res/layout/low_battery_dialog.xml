@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/backgroundDialogColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:gravity="center|start"
+        android:padding="16dp"
+        android:text="@string/lowBattery"
+        android:textColor="?attr/titleTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/titleTextColor"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:padding="16dp"
+        android:text="@string/messageLowBattery"
+        android:textColor="?attr/textColor"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/ignore"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:padding="16dp"
+            android:text="@string/ignore"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/activate"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:padding="16dp"
+            android:text="@string/activate"
+            android:textColor="?attr/titleTextColor"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

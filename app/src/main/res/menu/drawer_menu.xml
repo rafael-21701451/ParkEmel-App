@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_parks"
+            android:icon="@drawable/ic_parks"
+            android:title="@string/parks"/>
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/map"/>
+        <item
+            android:id="@+id/nav_quick_find"
+            android:icon="@drawable/ic_quick_find"
+            android:title="@string/quick_find"/>
+        <item
+            android:id="@+id/nav_trip_planner"
+            android:icon="@drawable/ic_trip_planner"
+            android:title="@string/trip_planner"/>
+        <item
+            android:id="@+id/nav_vehicles"
+            android:icon="@drawable/ic_vehicles"
+            android:title="@string/vehicles"/>
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contacts"
+            android:title="@string/contacts"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"/>
+    </group>
+</menu>

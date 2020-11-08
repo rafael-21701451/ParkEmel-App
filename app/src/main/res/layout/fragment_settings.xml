@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".ui.fragments.SettingsFragment">
+
+    <ImageView
+        android:id="@+id/s1icon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_shake"
+        android:tint="?attr/iconColor"/>
+
+    <TextView
+        android:id="@+id/setting1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="?attr/textColor"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@+id/s1icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/setting_1"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/setting1"
+        android:checked="false"
+        android:padding="16dp"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintStart_toEndOf="@+id/s1icon"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TableRow
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/s1icon"
+        android:background="?attr/textColor"
+        android:padding="16dp" />
+
+    <ImageView
+        android:id="@+id/s2icon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s1icon"
+        android:src="@drawable/ic_dark_mode"
+        android:tint="?attr/iconColor"/>
+
+    <TextView
+        android:id="@+id/setting2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:textColor="?attr/textColor"
+        android:layout_toEndOf="@id/s2icon"
+        app:layout_constraintStart_toEndOf="@+id/s2icon"
+        app:layout_constraintTop_toBottomOf="@+id/s1icon"
+        android:text="@string/setting_2" />
+
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:checked="false"
+        android:padding="16dp"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintStart_toEndOf="@+id/s2icon"
+        app:layout_constraintTop_toBottomOf="@+id/s1icon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

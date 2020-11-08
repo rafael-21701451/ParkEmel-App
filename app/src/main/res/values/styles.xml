@@ -1,0 +1,46 @@
+<resources>
+    <style name="ToolbarTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="textColor">@color/black</item>
+        <item name="fabColor">@color/colorPrimary</item>
+        <item name="cardColor">@color/light_grey</item>
+        <item name="emelColor">@color/transparent</item>
+        <item name="iconColor">@color/black</item>
+        <item name="formColor">@color/colorPrimary</item>
+        <item name="placeholderTextColor">@color/placeholder_grey</item>
+        <item name="titleTextColor">@color/colorPrimary</item>
+        <item name="drawerColor">@color/colorPrimary</item>
+        <item name="backgroundDialogColor">@color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dark_grey</item>
+        <item name="colorPrimaryDark">@color/dark_grey</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="backgroundColor">@color/very_very_dark_grey</item>
+        <item name="textColor">@color/white</item>
+        <item name="fabColor">@color/dark_grey</item>
+        <item name="cardColor">@color/very_dark_grey</item>
+        <item name="emelColor">@color/white</item>
+        <item name="iconColor">@color/white</item>
+        <item name="formColor">@color/white</item>
+        <item name="placeholderTextColor">@color/placeholder_grey</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="drawerColor">@color/dark_grey</item>
+        <item name="backgroundDialogColor">@color/dark_grey</item>
+    </style>
+
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/backgroundDialogColor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/filters"
+                android:textStyle="bold"
+                android:text="@string/filters"
+                android:textColor="?attr/titleTextColor"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:paddingStart="16dp"
+                android:contentDescription="@string/app_name" />
+            <TableRow
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/filters"
+                android:background="?attr/titleTextColor"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:id="@+id/typeLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textColor="?attr/textColor"
+                android:textStyle="bold"
+                android:text="@string/type"
+                android:gravity="center|start"
+                android:paddingStart="16dp"
+                android:layout_below="@+id/filters"
+                />
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/surface"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/surface"
+                        android:layout_weight="1"
+                        android:textColor="?attr/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginStart="100dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/structure"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/structure"
+                        android:layout_weight="1"
+                        android:textColor="?attr/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginStart="100dp"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_below="@+id/typeLL"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/textColor"
+                android:text="@string/distance"
+                android:gravity="center|start"
+                android:paddingStart="16dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/distanceSeekBar"
+                android:orientation="vertical"
+                android:layout_below="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/distanceValue"
+                    android:textColor="?attr/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    />
+
+                <SeekBar
+                    android:id="@+id/SeekBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:max="100"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:progress="0"
+                    android:progressBackgroundTint="?attr/placeholderTextColor"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/occupationLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/occupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center|start"
+                    android:paddingStart="16dp"
+                    android:text="@string/occupation"
+                    android:textColor="?attr/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox android:id="@+id/checkbox_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:text="@string/free"
+                    android:layout_marginStart="80dp"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/textColor"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_partially_Full"
+                    android:layout_marginStart="75dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:text="@string/partiallyFull"
+                    android:textColor="?attr/textColor"
+                    />
+
+                <CheckBox android:id="@+id/checkbox_full"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="80dp"
+                    android:layout_height="50dp"
+                    android:text="@string/full"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/textColor"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_below="@+id/occupationLL"
+                android:layout_height="50dp">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@color/red"
+                    android:padding="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/clear"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/apply"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/titleTextColor"
+                    android:backgroundTint="@color/white"
+                    android:padding="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/apply"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

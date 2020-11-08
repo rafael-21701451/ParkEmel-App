@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/service_station"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button_SS"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:gravity="center|start"
+                android:text="@string/service_station"
+                android:textColor="?attr/textColor"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/expand_button_SS"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="?attr/backgroundColor"
+                android:tint="?attr/iconColor"
+                android:contentDescription="collapse"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_collapse" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_SS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="?attr/textColor"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_station" />
+
+        <TableRow
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/textColor"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/details_SS" />
+
+        <LinearLayout
+            android:id="@+id/general_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_SS">
+
+            <Button
+                android:id="@+id/button_GC"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:gravity="center|start"
+                android:text="@string/general_contacts"
+                android:textColor="?attr/textColor"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/expand_button_GC"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="?attr/backgroundColor"
+                android:tint="?attr/iconColor"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_expand" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_GC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColor"
+            android:gravity="start"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/general_contacts" />
+
+        <TableRow
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/textColor"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/details_GC" />
+
+
+        <LinearLayout
+            android:id="@+id/blocked_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_GC">
+
+            <Button
+                android:id="@+id/button_BV"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:gravity="center|start"
+                android:text="@string/blocked_vehicles"
+                android:textColor="?attr/textColor"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/expand_button_BV"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="?attr/backgroundColor"
+                android:tint="?attr/iconColor"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_expand" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_BV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="?attr/textColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blocked_vehicles" />
+
+        <TableRow
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/textColor"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/details_BV" />
+
+        <LinearLayout
+            android:id="@+id/check_blocked_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_BV">
+
+            <Button
+                android:id="@+id/button_CBV"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:gravity="center|start"
+                android:text="@string/check_blocked_vehicles"
+                android:textColor="?attr/textColor"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/message_button_CBV"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:backgroundTint="?attr/backgroundColor"
+                android:tint="?attr/iconColor"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_message" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vazio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="?attr/textColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_blocked_vehicles" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

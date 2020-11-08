@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/backgroundDialogColor">
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:text="@string/noConnection"
+        android:textColor="?attr/titleTextColor"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:padding="16dp"
+        android:contentDescription="@string/app_name" />
+    <TableRow
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/titleTextColor"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="?attr/textColor"
+        android:text="@string/noConnectionDescription"
+        android:gravity="center|start"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/confirmAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/titleTextColor"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:textStyle="bold"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/confirmAccept"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

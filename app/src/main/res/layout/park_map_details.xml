@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/backgroundDialogColor">
+
+    <TextView
+        android:id="@+id/parkName"
+        android:textStyle="bold"
+        android:textColor="?attr/titleTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:contentDescription="@string/app_name" />
+
+    <TableRow
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/titleTextColor"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="?attr/textColor"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/clickForMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/seeDetails"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="?attr/titleTextColor"
+        android:contentDescription="@string/app_name" />
+
+
+
+</LinearLayout>
